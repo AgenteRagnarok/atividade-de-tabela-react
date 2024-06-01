@@ -1,11 +1,20 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import 
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Usuarios from "./pages/Usuarios";
+import NavBar from "./components/NavBar";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById("root")!);
+
+root.render(
+  <BrowserRouter>
+  <NavBar />
+    <Routes>
+      <Route path="/" element={<div>Hello World</div>} />
+      <Route path="/usuarios" element={<Usuarios />} />
+    </Routes>
+  </BrowserRouter>
 );
+
+

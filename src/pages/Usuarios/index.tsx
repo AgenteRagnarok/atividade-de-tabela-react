@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
-import './App.css';
-import CarForm from './CarForm';
-import CarTable from './CarTable';
+import '../../App.css';
+import CarForm from '../../CarForm';
+import CarTable from '../../CarTable';
+
 
 interface Car {
   id: number;
@@ -12,7 +13,9 @@ interface Car {
   imagem: string;
 }
 
-const App: React.FC = () => {
+
+
+const Usuarios: React.FC = () => {
   const [cars, setCars] = useState<Car[]>([]);
   const [carToEdit, setCarToEdit] = useState<Car | null>(null);
 
@@ -45,4 +48,6 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+
+
+export default Usuarios;
