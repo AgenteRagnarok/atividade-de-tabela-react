@@ -17,7 +17,7 @@ startEditCar: (car: Car) => void;
 
 const CarTable: React.FC<CarTableProps> = ({ cars, removeCar, startEditCar }) => {
 return (
-    <table>
+    <table className="table table-striped">
     <thead>
         <tr>
         <th>ID</th>
@@ -26,6 +26,7 @@ return (
         <th>Modelo</th>
         <th>Cor</th>
         <th>Imagem</th>
+        <th>Ações</th>
         </tr>
     </thead>
     <tbody>
@@ -38,8 +39,8 @@ return (
             <td>{car.cor}</td>
             <td>{car.imagem && <img src={car.imagem} alt="Car" style={{ maxWidth: '100px' }} />}</td>
             <td>
-            <button onClick={() => startEditCar(car)}>Editar</button>
-            <button onClick={() => removeCar(car.id)}>Remover</button>
+            <button className="btn btn-primary me-2" onClick={() => startEditCar(car)}>Editar</button>
+            <button className="btn btn-danger" onClick={() => removeCar(car.id)}>Remover</button>
             </td>
         </tr>
         ))}

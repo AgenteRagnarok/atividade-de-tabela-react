@@ -1,9 +1,12 @@
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Usuarios from "./pages/Usuarios";
-import NavBar from "./components/NavBar";
+import NavBar from "./components/NavBar/Navbar";
+import App from "./App";
+import "./App.css";
+import React from 'react';
+
 
 const root = ReactDOM.createRoot(document.getElementById("root")!);
 
@@ -18,3 +21,9 @@ root.render(
 );
 
 
+// ReactDOM.render(
+//   <React.StrictMode>
+//     <App />
+//   </React.StrictMode>,
+//   document.getElementById('root')
+// );

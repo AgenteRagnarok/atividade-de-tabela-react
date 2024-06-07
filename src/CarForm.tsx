@@ -122,10 +122,10 @@ return (
             accept="image/*"
             onChange={handleImageUpload}
         />
-        {imagem && <img src={imagem} alt="Car Image" style={{ maxWidth: '100px', marginTop: '10px' }} />}
+        {imagem && <img src={imagem} alt="Car handleImageUpload" style={{ maxWidth: '100px', marginTop: '10px' }} />}
         </li>
         <li>
-        <button type="submit">{carToEdit ? 'Editar dados do Carro' : 'Adicionar Carro'}</button>
+        <button type="submit">{carToEdit ? 'Editar Carro' : 'Adicionar Carro'}</button>
         {carToEdit && <button type="button" onClick={clearEditCar}>Cancelar Edição</button>}
         </li>
     </ul>
