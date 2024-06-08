@@ -15,7 +15,7 @@ root.render(
   <BrowserRouter>
   <NavBar />
     <Routes>
-      <Route path="/" element={<div>Hello World</div>} />
+      <Route path="/" element={<div>Bem-Vindo</div>} />
       <Route path="/usuarios" element={<Usuarios />} />
     </Routes>
   </BrowserRouter>
