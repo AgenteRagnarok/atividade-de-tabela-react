@@ -1,14 +1,15 @@
-import ReactDOM from "react-dom/client";
+import'bootstrap/dist/css/bootstrap.min.css';
+import ReactDOM from "react-dom";
 import "./index.css";
+import React from 'react';
+import App from "./App";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Usuarios from "./pages/Usuarios";
 import NavBar from "./components/NavBar/Navbar";
-import App from "./App";
 import "./App.css";
-import React from 'react';
 
 
-const root = ReactDOM.createRoot(document.getElementById("root")!);
+const root = ReactDOM.createRoot(document.getElementById("root"))
 
 root.render(
   <BrowserRouter>
@@ -21,9 +22,9 @@ root.render(
 );
 
 
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <App />
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+ReactDOM.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  document.getElementById('root')
+);
